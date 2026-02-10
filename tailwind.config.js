@@ -19,6 +19,13 @@ export default {
       },
       animation: {
         'bounce-slow': 'bounce 3s infinite',
+        'scroll-x': 'scroll-x 25s linear infinite',
+      },
+      keyframes: {
+        'scroll-x': {
+          '0%': { transform: 'translateX(0)' },
+          '100%': { transform: 'translateX(-50%)' },
+        },
       },
     },
   },

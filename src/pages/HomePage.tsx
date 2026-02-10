@@ -131,18 +131,34 @@ export default function HomePage() {
       {/* Our Clients Section */}
       <section className="py-16 bg-white border-b border-gray-100">
         <div className="container mx-auto px-6 text-center">
-          <p className="text-sm font-bold text-primary tracking-widest uppercase mb-8">Trusted by Industry Leaders</p>
-          <div className="flex flex-wrap justify-center items-center gap-12 md:gap-20 opacity-70 transition-all duration-500">
+          <p className="text-sm font-bold text-primary tracking-widest uppercase mb-10">Trusted by Industry Leaders</p>
+          <div className="flex flex-wrap justify-center items-center gap-12 md:gap-16">
             {[
-              "Innotatzit",
-              "Wondersoft",
-              "Sutherland global service",
-              "Highmoon",
-              "HCL"
-            ].map((client, index) => (
-              <span key={index} className="text-xl md:text-2xl font-bold text-gray-400 hover:text-secondary transition-colors cursor-default">
-                {client}
-              </span>
+              { name: "Innotatzit", logo: "https://innotatzit.co.uk/images/innotatzit-logo-1.png" },
+              { name: "Wondersoft", logo: "https://cdn.brandfetch.io/idtLwd5zK6/w/187/h/40/theme/dark/logo.png" },
+              { name: "Sutherland Global Service", logo: "https://cdn.brandfetch.io/idWZShVpnT/w/557/h/86/theme/dark/logo.png" },
+              { name: "Highmoon", logo: "https://highmoon.ae/wp-content/uploads/2025/05/Highmoon-Office-Furniture-Logo.svg" },
+              { name: "HCL", logo: "https://cdn.brandfetch.io/id8i2DmKRE/w/800/h/146/theme/dark/logo.png" },
+            ].map((client, i) => (
+              <div
+                key={i}
+                className="group relative hover:scale-110 transition-all duration-300 cursor-pointer p-4"
+              >
+                <div className="absolute inset-0 bg-primary/5 rounded-xl scale-0 group-hover:scale-100 transition-transform duration-300" />
+                <img
+                  src={client.logo}
+                  alt={client.name}
+                  className="relative h-10 md:h-12 w-auto object-contain max-w-[160px]"
+                  onError={(e) => {
+                    const target = e.currentTarget;
+                    target.style.display = 'none';
+                    const fallback = document.createElement('span');
+                    fallback.className = 'text-xl md:text-2xl font-bold text-gray-400 group-hover:text-primary';
+                    fallback.textContent = client.name;
+                    target.parentElement?.appendChild(fallback);
+                  }}
+                />
+              </div>
             ))}
           </div>
         </div>
