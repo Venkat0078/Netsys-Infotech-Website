@@ -2,7 +2,7 @@ import { useState, useEffect } from 'react';
 import { Mail, MapPin, Facebook, Twitter, Linkedin, Instagram, ChevronRight, Menu, X } from 'lucide-react';
 import { Link, useLocation } from 'react-router-dom';
 import { Button } from '../ui/Button';
-import logo from '../../assets/logo.svg';
+import logo from '../../public/logo/netsys-removebg-preview.png';
 
 export const Navbar = () => {
     const [isMenuOpen, setIsMenuOpen] = useState(false);

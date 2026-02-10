@@ -60,7 +60,7 @@ export default function HomePage() {
             </div>
             <h1 className="text-5xl lg:text-7xl font-bold leading-[1.1]">
               We Provide <br />
-              <span className="text-transparent bg-clip-text bg-gradient-to-r from-primary to-[#26c6da]">Netsys Infotech</span>
+              <span className="text-transparent bg-clip-text bg-gradient-to-r from-primary to-[#26c6da]">Crystal Clear Solutions</span>
             </h1>
             <p className="text-lg text-gray-300 max-w-lg leading-relaxed">
               Transform your business with cutting-edge IT services. From cloud migration to cybersecurity, we deliver transparent, reliable solutions that drive growth.
