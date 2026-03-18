@@ -5,6 +5,7 @@ import {
   Shield,
   CheckCircle,
   Phone,
+  MapPin,
   ChevronLeft,
   ChevronRight
 } from 'lucide-react';
@@ -68,7 +69,7 @@ export default function HomePage() {
           </div>
 
           <div className="relative hidden lg:block">
-            <div className="relative z-10 rounded-2xl overflow-hidden shadow-2xl border-8 border-white/5 group">
+            <div className="relative z-10 rounded-3xl overflow-hidden shadow-2xl border-8 border-white/5 group">
               <img src={heroImages[currentHeroIndex]} alt="IT Services" className="w-full h-auto transition-all duration-500 ease-in-out" />
 
               <button
@@ -169,7 +170,7 @@ export default function HomePage() {
         <div className="container mx-auto px-6">
           <div className="grid lg:grid-cols-2 gap-16 items-center">
             <div className="relative">
-              <div className="relative z-10 rounded-lg overflow-hidden shadow-2xl">
+              <div className="relative z-10 rounded-3xl overflow-hidden shadow-2xl">
                 <img src={aboutImage} alt="Office working" className="w-full h-auto object-cover" />
               </div>
 
@@ -198,7 +199,7 @@ export default function HomePage() {
                 ))}
               </div>
 
-              <div className="pt-6 border-t border-gray-100 flex items-center gap-8">
+              <div className="pt-6 border-t border-gray-100 flex flex-col sm:flex-row items-start sm:items-center gap-8">
                 <Button variant="primary">Discover More</Button>
                 <div className="flex items-center gap-4">
                   <div className="w-12 h-12 rounded-full bg-accent flex items-center justify-center text-white animate-pulse">
@@ -206,7 +207,16 @@ export default function HomePage() {
                   </div>
                   <div>
                     <span className="block text-xs uppercase text-gray-500 font-bold">Call Us Now</span>
-                    <span className="block text-secondary font-bold text-xl">+1 (555) 123-4567</span>
+                    <span className="block text-secondary font-bold text-xl">+91 9940276633</span>
+                  </div>
+                </div>
+                <div className="flex items-center gap-4">
+                  <div className="w-12 h-12 rounded-full bg-primary flex items-center justify-center text-white">
+                    <MapPin size={20} />
+                  </div>
+                  <div>
+                    <span className="block text-xs uppercase text-gray-500 font-bold">Visit Us</span>
+                    <span className="block text-secondary font-bold text-lg">T. Nagar, Chennai, Tamil Nadu 600017</span>
                   </div>
                 </div>
               </div>

@@ -13,7 +13,7 @@ interface ServiceCardProps {
 export const ServiceCard: React.FC<ServiceCardProps> = ({ icon: Icon, image, title, desc, link }) => {
     return (
         <Link to={link} className="block h-full group">
-            <div className="h-full relative bg-white transition-all duration-300 overflow-hidden flex flex-col rounded-sm">
+            <div className="h-full relative bg-white transition-all duration-300 overflow-hidden flex flex-col rounded-3xl shadow-xl hover:shadow-2xl">
 
                 {/* Image Section */}
                 <div className="relative h-64 overflow-hidden">

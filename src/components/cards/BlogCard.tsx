@@ -11,7 +11,7 @@ interface BlogCardProps {
 }
 
 export const BlogCard: React.FC<BlogCardProps> = ({ title, excerpt, author, date, category, image }) => (
-    <div className="group bg-white rounded-xl overflow-hidden shadow-lg border border-gray-100 hover:shadow-2xl transition-all duration-300">
+    <div className="group bg-white rounded-3xl overflow-hidden shadow-xl border border-gray-100 hover:shadow-2xl transition-all duration-300">
         <div className="relative h-60 overflow-hidden">
             <div className="absolute top-4 left-4 z-10">
                 <span className="inline-block px-3 py-1 bg-primary text-white text-xs font-bold rounded uppercase">{category}</span>

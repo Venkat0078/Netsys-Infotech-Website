@@ -90,12 +90,17 @@ export default function ServicesPage() {
       />
 
       {/* Page Header */}
-      <div className="bg-secondary py-20 text-center">
-        <h1 className="text-4xl md:text-5xl font-bold text-white mb-4">Our Services</h1>
-        <p className="text-gray-400">Home / Services</p>
-      </div>
+      <header className="relative bg-secondary pt-20 pb-32 overflow-hidden">
+        <div className="absolute top-0 right-0 w-1/2 h-full bg-primary/10 skew-x-12 translate-x-20"></div>
+        <div className="absolute bottom-0 left-0 w-96 h-96 bg-primary/5 rounded-full blur-3xl -translate-x-1/2 translate-y-1/2"></div>
 
-      <section className="py-24 bg-white">
+        <div className="container mx-auto px-6 text-center relative z-10">
+          <h1 className="text-4xl md:text-5xl font-bold text-white mb-4">Our Services</h1>
+          <p className="text-gray-300">Home / Services</p>
+        </div>
+      </header>
+
+      <section className="py-24 bg-[#F5F7FA]">
         <div className="container mx-auto px-6">
           <SectionTitle
             subtitle="Our Services"

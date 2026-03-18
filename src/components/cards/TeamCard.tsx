@@ -8,7 +8,7 @@ interface TeamCardProps {
 }
 
 export const TeamCard: React.FC<TeamCardProps> = ({ name, role, image }) => (
-    <div className="group bg-white rounded-xl overflow-hidden shadow-lg border border-gray-100 hover:shadow-2xl transition-all duration-300">
+    <div className="group bg-white rounded-3xl overflow-hidden shadow-xl border border-gray-100 hover:shadow-2xl transition-all duration-300">
         <div className="relative overflow-hidden h-80">
             <div className="absolute inset-0 bg-secondary/0 group-hover:bg-secondary/40 transition-colors z-10 duration-300"></div>
             <img

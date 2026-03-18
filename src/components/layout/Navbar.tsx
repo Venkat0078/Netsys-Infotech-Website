@@ -24,7 +24,7 @@ export const Navbar = () => {
             <div className="hidden lg:flex justify-between items-center py-2 px-8 bg-secondary text-gray-300 text-sm">
                 <div className="flex gap-6">
                     <span className="flex items-center gap-2 hover:text-white cursor-pointer"><Mail size={14} className="text-primary" /> info@netsysinfotech.com</span>
-                    <span className="flex items-center gap-2 hover:text-white cursor-pointer"><MapPin size={14} className="text-primary" /> 380 Albert St, Melbourne</span>
+                    <span className="flex items-center gap-2 hover:text-white cursor-pointer"><MapPin size={14} className="text-primary" /> T. Nagar, Chennai, Tamil Nadu 600017</span>
                 </div>
                 <div className="flex gap-4 items-center">
                     <span className="mr-2">Follow Us:</span>
@@ -59,7 +59,7 @@ export const Navbar = () => {
                         <div className="hidden lg:flex items-center gap-3">
                             <div className="text-right hidden xl:block">
                                 <span className="block text-xs text-gray-500">Have any questions?</span>
-                                <span className="block text-secondary font-bold">Free + (678) 345-3456</span>
+                                <span className="block text-secondary font-bold">+91 9940276633</span>
                             </div>
                             <Button variant="primary" icon={ChevronRight}>Get a Quote</Button>
                         </div>
